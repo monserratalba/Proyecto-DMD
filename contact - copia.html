@@ -5,6 +5,9 @@
 	<link rel="shortcut icon" href="img/Favicon dmd.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="flexboxgrid.min.css" type="text/css" >
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
 
@@ -18,6 +21,52 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
+	  <style>
+        .head, .main{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .row.head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            height: 100px;
+        }
+        .box.centered{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+        .row .info{
+            height: 100%;
+            border: 1px solid blue;
+        }
+        .left, .right{
+            padding: 10px;
+        }
+
+        .main{
+            height: 500px;
+        }
+        .main{
+            border: 1px solid blue;
+            padding: 20px;
+        }
+        .row .mainInfo{
+            width: 100%;
+            height: 100%;
+            border: 1px solid gray;
+        }
+        .mainInfo .row{
+            height: 33%;
+            width: 99%;
+            margin: 0 auto;
+        }
+    </style>
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -47,7 +96,7 @@
         </div>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container"> <img src="img/logo-directorio-medico-digital.png" width="131" height="57" alt=""/>
+        <div class="container"> <img src="img/logo-directorio-medico-digital.png" alt="sample" width="131" height="57" alt=""/>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -105,83 +154,52 @@
               <li class="nav-item"> <a class="nav-link active" href="contact.html">Contacto</a> </li>
             </ul>
           </div>
-        </div>
+       </div>
       </nav>
     </header>
+	
+	<body>
+        <div class="row head">
+            <div class="col-md-5">
+                <div class="box centered">imagen del doctor</div>
+            </div>
+                
+            <div class="col-md-6">
+                <div class="row info">
+                    <div class="col-md-7">
+                        <div class="box left">
+                            <p>Direccion:</p>
+                            <p>Horario:</p>
+                            <p>Correo electronico:</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box left">
+                            <p><br>Telefono:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div class="row main">
+            <div class="box mainInfo">
+                <div class="row">
+                    <p>Informacion Academica</p>
+                </div>
+                <div class="row">
+                    <p>Servicios que ofrece</p>
+                </div>
+                <div class="row">
+                    <p>Reconocimientos adquiridos</p>
+                </div>
+            </div>
+        </div>
+</body>
     <!-- END header -->
     
 
-    <section class="home-slider inner-page owl-carousel">
-      <div class="slider-item" style="background-image: url('img/slider-2.jpg');">
-        
-        <div class="container">
-          <div class="row slider-text align-items-center">
-            <div class="col-md-7 col-sm-12 element-animate">
-              <h1>Doctores</h1>
-              <p>Los mejores médicos al alcance de tus manos, conoce de su trayectoria y concreta una cita para tu valoración</p>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </section>
+    <section class="home-slider inner-page owl-carousel"> </section>
     <!-- END slider -->
-
-
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-5 element-animate">
-            <form action="#" method="post" class="contactForm">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <label for="fname">Nombre</label>
-                  <input type="text" class="form-control form-control-lg" id="cname">
-                </div>
-                <div class="col-md-6 form-group">
-                  <label for="lname">Apellido</label>
-                  <input type="text" class="form-control form-control-lg" id="cname2">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 form-group">
-                  <label for="email">Correo Electronico</label>
-                  <input type="email" id="cemail" class="form-control form-control-lg">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 form-group">
-                  <label for="message">Escribe tu Mensaje</label>
-                  <textarea name="message" id="cmessage" class="form-control form-control-lg" cols="30" rows="8"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="button" value="Enviar Mensaje" class="btn btn-primary btn-lg btn-block btnSendCMail">
-                </div>
-
-              </div>
-            </form>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-5 element-animate">
-            
-            <h5 class="text-uppercase mb-3">Direccion</h5>
-            <p class="mb-5">Tlacotalpan #79 <br> Interior 102 <br> Colonia Roma Sur <br>Cuauhtemoc </p>
-            
-            <h5 class="text-uppercase mb-3">Email</h5>
-            <p class="mb-5"><a href="mailto:info@yourdomain.com">info@directoriomedicodigital.com.mx</a> </p>
-            
-            <h5 class="text-uppercase mb-3">Teléfono</h5>
-            <p class="mb-5">72-58-41-01 <br> 72-58-40-92 <br></p>
-  
-
-          </div>
-        </div>
-      </div>
-    </section>
 <!-- END cta-link -->
 
     <footer class="site-footer" role="contentinfo">
