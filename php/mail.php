@@ -21,7 +21,7 @@ $cabeceras = "From: ".$email . "\r\n" .
 "X-Mailer: PHP/" . phpversion();
 
 if(mail($para, $asunto, $mensaje, $cabeceras)) {
-    echo "Correo enviado correctamente";
+    echo "En breve un ejecutivo se pondra en contacto contigo.";
 } else {
     echo $mensaje."Error al enviar mensaje";
 }
