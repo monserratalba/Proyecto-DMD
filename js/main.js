@@ -204,9 +204,15 @@
       var vars = [name.val(), email.val(), spec.val(), phone.val(), msg.val()];
       if (isValidEmailAddress(email.val())) {
         $.post("php/mail.php", { form: vars }, function(data) {
+          if(data.includes("Error")){
+            alertify.error(data);
+          }else{
+            alertify.success(data);
+          }
           console.log(data);
         });
       } else {
+        alertify.log("El email es incorrecto");
         console.log("el email no cumple con la estructura correcta...");
       }
     });
@@ -223,9 +229,15 @@
       var vars = [name.val(), email.val(), spec.val(), msg.val()];
       if (isValidEmailAddress(email.val())) {
         $.post("php/mail.php", { form: vars }, function(data) {
+          if(data.includes("Error")){
+            alertify.error(data);
+          }else{
+            alertify.success(data);
+          }
           console.log(data);
         });
       } else {
+        alertify.log("El email es incorrecto");
         console.log("el email no cumple con la estructura correcta...");
       }
     });
@@ -242,9 +254,15 @@
       var vars = [name.val(), email.val(), spec.val(), phone, ne.val()];
       if (isValidEmailAddress(email.val())) {
         $.post("php/mail.php", { form: vars }, function(data) {
+          if(data.includes("Error")){
+            alertify.error(data);
+          }else{
+            alertify.success(data);
+          }
           console.log(data);
         });
       } else {
+        alertify.log("El email es incorrecto");
         console.log("el email no cumple con la estructura correcta...");
       }
     });
