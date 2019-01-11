@@ -1,8 +1,8 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 #mainwrapper header {
 	/*Header */
 	background-color: rgba(208,207,207,1.00);
-	overflow: auto;
+	/*overflow: auto;*/
 	font-family: montserrat, sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -16,16 +16,16 @@
 	padding-bottom: 12px;
 	color: rgba(146,146,146,1.00);
 }
-#mainwrapper header nav {
-	/*Nav bar containing links in header */
-	text-align: right;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-right: 2%;
-	width: 68%;
-	float: left;
-	color: rgba(146,146,146,1.00);
-}
+    #mainwrapper header nav {
+        /*Nav bar containing links in header */
+        text-align: right;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 2%;
+        width: rigth;
+        float: auto;
+        color: rgba(146,146,146,1.00);
+    }
 header nav a {
 	/* Links in header */
 	padding-right: 2%;
