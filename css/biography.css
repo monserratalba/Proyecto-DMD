@@ -1,0 +1,126 @@
+body {
+  background: #f9f9f7;
+}
+
+.bio {
+  padding: 30px;
+}
+
+.bio .row {
+  background: transparent;
+  margin: 20px;
+}
+
+.bio .row div {
+  background: #fff;
+}
+
+.bio .bio-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio .bio-pic img {
+  width: 300px;
+  height: 300px;
+  background: #999;
+}
+
+.bio .bio-info p:nth-child(1) {
+  color: #6ba3a8;
+  font-size: 20px;
+  border-bottom: 2px solid #6ba3a8;
+}
+
+.bio .bio-acad-info {
+  color: #32beb1;
+  font-weight: bolder;
+}
+
+.bio .bio-acad-info i {
+  color: #32beb1;
+  font-weight: bolder;
+}
+
+.bio .bio-acad-info p {
+  color: black;
+  font-weight: normal;
+}
+
+.bio .bio-acad-info .folio {
+  color: #a3bfbf;
+}
+
+.bio .bio-acad-info p label {
+  position: absolute;
+  right: 100px;
+}
+
+.bio .bio-services,
+.bio .bio-loc {
+  padding-top: 10px;
+}
+
+.bio .bio-services p:nth-child(1) {
+  color: #32beb1;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.bio .bio-services ul {
+  list-style: none;
+  color: black;
+}
+
+.bio .bio-services ul li i {
+  color: #32beb1;
+  font-weight: bolder;
+}
+
+.bio .bio-loc {
+  color: black;
+}
+
+.bio .bio-loc p i {
+  color: #32beb1;
+  font-weight: bolder;
+}
+
+.bio .bio-loc img {
+  width: 100%;
+}
+
+.bio .bio-loc ul {
+  list-style: none;
+  color: #aaa;
+}
+
+.bio .bio-loc ul li {
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
+.bio .bio-loc ul li label {
+  position: absolute;
+  right: 15px;
+}
+
+.bio .bio-recs p {
+  color: #32beb1;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.bio .bio-recs ul {
+  list-style: none;
+}
+
+.bio .bio-recs ul li i {
+  color: #32beb1;
+  font-weight: bolder;
+}
+
+.bio .bio-space {
+  background: transparent !important;
+}
