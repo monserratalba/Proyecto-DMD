@@ -284,5 +284,12 @@ footer {
 #content footer article {
 	/* Each foter article */
 	width: 96%;
+	
+	elemento {
+    padding-left: 180px;
+    padding-top: 50px; }
+
 }
+}
+.center {
 }

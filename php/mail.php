@@ -9,7 +9,7 @@ if(count($form) > 4){
     $msg = $form[4];
 }
 /* para que mande el email debe de estar montado en un servido */
-$para = "karen@xtnegocio.com.mx";
+$para = "info@directoriomedicodigital.com.mx";
 $asunto = "Prueba de SMTP local";
 if(count($form) > 4){
     $mensaje = $name." ".$spec."\r\n".$msg."\r\n".$phone;
